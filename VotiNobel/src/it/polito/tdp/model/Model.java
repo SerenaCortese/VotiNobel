@@ -50,7 +50,7 @@ public class Model {
 		if(totCrediti(parziale)== numeroCrediti) {
 			if(avg(parziale)>bestAvg) {
 				//salvo soluzione parziale creando una deep copy della lista
-				soluzione = new ArrayList(parziale);
+				soluzione = new ArrayList<Esame>(parziale);
 				bestAvg = avg(parziale);
 			}
 		}
