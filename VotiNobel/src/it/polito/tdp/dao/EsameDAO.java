@@ -40,7 +40,7 @@ public class EsameDAO {
 	 * Data una matricola ed il codice insegnamento, iscrivi lo studente al corso.
 	 */
 	public boolean inserisciEsame(Esame esame) {
-
+		//Insert ignore serve per evitare errore in caso ci sia già un altro esame con quel nome
 		String sql = "INSERT IGNORE INTO `esamitriennale`.`esami` (`codins`, `nomecorso`, `voto`, `crediti`) VALUES(?,?,?,?)";
 		boolean returnValue = false;
 		

@@ -1,12 +1,19 @@
 package it.polito.tdp.model;
 
+import java.util.List;
+
 public class TestModel {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
 		Model model = new Model();
-		model.calcolaSottoinsiemeEsami(20);
+		
+		List<Esame> soluzione = model.calcolaSottoinsiemeEsami(22);
+		
+		System.out.println("Migliore combinazione di esami: ");
+		for(Esame e : soluzione) {
+			System.out.println(e);
+		}
 		
 	}
 
